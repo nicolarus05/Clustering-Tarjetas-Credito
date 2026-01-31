@@ -1,0 +1,424 @@
+# ============================================
+# .gitignore para Proyecto de Clustering
+# Clustering de Tarjetas de Crédito
+# ============================================
+
+# ============================================
+# PYTHON
+# ============================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# ============================================
+# DATOS Y ARCHIVOS GRANDES
+# ============================================
+
+# Archivos CSV (excepto ejemplo pequeño si lo tienes)
+datos/*.csv
+!datos/ejemplo_pequeño.csv
+
+# Archivos Excel
+datos/*.xlsx
+datos/*.xls
+
+# Archivos de texto con datos
+datos/*.txt
+
+# Archivos JSON con datos sensibles
+datos/*_sensible.json
+datos/*_privado.json
+
+# Archivos comprimidos
+datos/*.zip
+datos/*.tar.gz
+datos/*.rar
+datos/*.7z
+
+# Bases de datos
+*.db
+*.sqlite
+*.sqlite3
+
+# Archivos pickle (modelos guardados)
+*.pkl
+*.pickle
+
+# ============================================
+# JUPYTER NOTEBOOK
+# ============================================
+
+# Checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Configuración de Jupyter
+.jupyter/
+
+# ============================================
+# IDEs y EDITORES
+# ============================================
+
+# VSCode
+.vscode/
+.history/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# Spyder
+.spyderproject
+.spyproject
+
+# ============================================
+# SISTEMA OPERATIVO
+# ============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+.nfs*
+
+# ============================================
+# RESULTADOS Y TEMPORALES
+# ============================================
+
+# Archivos temporales
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+
+# Archivos de salida temporales
+output/
+temp/
+tmp/
+
+# Gráficos temporales (mantener solo los finales)
+# resultados/graficos/temp_*.png
+# resultados/graficos/draft_*.png
+
+# ============================================
+# CREDENCIALES Y CONFIGURACIÓN SENSIBLE
+# ============================================
+
+# Variables de entorno
+.env
+.env.local
+.env.*.local
+
+# Configuración con credenciales
+config_local.py
+config_secret.py
+secrets.json
+credentials.json
+
+# Claves API
+*.key
+*.pem
+*.p12
+
+# ============================================
+# MODELOS ENTRENADOS (si son muy grandes)
+# ============================================
+
+# Modelos grandes
+# modelos/*.pkl
+# modelos/*.h5
+# modelos/*.pt
+# modelos/*.joblib
+
+# ============================================
+# DOCUMENTACIÓN GENERADA
+# ============================================
+
+# Sphinx
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# MkDocs
+site/
+
+# ============================================
+# TESTING
+# ============================================
+
+# pytest
+.pytest_cache/
+.tox/
+
+# Coverage
+htmlcov/
+.coverage
+coverage.xml
+
+# ============================================
+# CLOUD Y DEPLOYMENT
+# ============================================
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# AWS
+*.pem
+
+# Google Cloud
+*.json
+!requirements.json
+
+# Azure
+*.publishsettings
+
+# ============================================
+# OTROS
+# ============================================
+
+# Archivos de respaldo
+*.bak
+*.old
+*_backup.*
+
+# Archivos de bloqueo
+*.lock
+
+# Carpetas de caché
+cache/
+.cache/
+
+# Node modules (si usas alguna herramienta JS)
+node_modules/
+
+# ============================================
+# CONFIGURACIÓN ESPECÍFICA DEL PROYECTO
+# ============================================
+
+# Datos privados o sensibles
+datos/privados/
+datos/confidencial/
+datos/*_privado.*
+
+# Resultados preliminares (mantener solo finales)
+resultados/drafts/
+resultados/borradores/
+
+# Notebooks de prueba
+notebooks/*_test.ipynb
+notebooks/*_borrador.ipynb
+notebooks/Untitled*.ipynb
+
+# ============================================
+# EXCEPCIONES (archivos que SÍ queremos versionar)
+# ============================================
+
+# Mantener estructura de carpetas vacías
+!datos/.gitkeep
+!resultados/graficos/.gitkeep
+!resultados/metricas/.gitkeep
+
+# Mantener archivos README en carpetas
+!*/README.md
+
+# Mantener archivo de ejemplo pequeño
+!datos/datos_ejemplo.csv
+
+# ============================================
+# FIN DEL .gitignore
+# ============================================
